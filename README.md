@@ -2,7 +2,11 @@
 
 This repo contains solver.js, which is a vanilla javascript solution for the matchesfashion assignment
 
+Included are 4 input files which I have used as test input in developing this solution - 1-3 are the examples from the assignment
+and WarOfWorlds.txt is the entire book War of Worlds by H. G. Wells
+
 #Before you Run the Solution
+
 Please ensure you have Node installed on your machine. You can get it here: https://nodejs.org/en/download/
 
 Please ensure you have copy and pasted your input file into the same folder as solver.js
