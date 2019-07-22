@@ -1,13 +1,8 @@
 const fs = require('fs');
-const readline = require('readline');
-
-function userInput() {
-    var file = process.argv[2];
-    return file;
-}
 
 function input() {
-    var file = userInput();
+
+    var file = process.argv[2];
 
     var str = fs.readFileSync(file).toString();
     return solve(str);
