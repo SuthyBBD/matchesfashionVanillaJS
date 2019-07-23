@@ -12,8 +12,10 @@ function solve(str) {
 
     const wordMap = [];
     str.match(/[a-z']+/i) !== null ? str.match(/[a-z']+/gi).map(function (word) {
-        word = word.toLowerCase();
-        wordMap[word] > 0 ? wordMap[word] += 1 : wordMap[word] = 1;
+        if (word.match(/[a-z]/)) {
+            word = word.toLowerCase();
+            wordMap[word] > 0 ? wordMap[word] += 1 : wordMap[word] = 1;
+        }
     }) : [];
 
     const maxObj = {max1: {num: 0, word: ""}, max2: {num: 0, word: ""}, max3: {num: 0, word: ""}};
